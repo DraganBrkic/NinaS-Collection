@@ -1,0 +1,379 @@
+@media only screen and (max-width: 1640px) {
+
+    html {
+        font-size: 90%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1550px) {
+    .nav {
+        margin-left: 0;
+    }
+
+} 
+
+@media only screen and (max-width: 1470px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 1282px) {
+
+    .new-items-main-div {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .item img {
+        height: 90%;
+    }
+
+    .prices p {
+        margin-right: 2rem;
+    }
+
+    footer h2 {
+        margin: 1.5rem 3rem;
+    }
+
+    .sm-icons {
+        justify-content: space-between;
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 1181px) {
+    html {
+        font-size: 75%;
+    }
+
+    .custom-shape-divider-top-1616535572 svg,
+    .custom-shape-divider-bottom-1616535378 svg {
+        height: 100px;
+    }
+
+    .hamburger-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+
+    li {
+        margin: 0 0.5rem
+    }
+
+    .nav a {
+        font-size: 1.3rem;
+    }
+
+    .how-to-order {
+        width: 90%;
+    }
+
+    .sm-icons {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .item img {
+        height: 70%;
+    }
+
+    .custom-shape-divider-top-1616535572 svg,
+    .custom-shape-divider-bottom-1616535378 svg {
+        height: 70px;
+    }
+
+    .Logo-black {
+        height: 35rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .nav {
+        display: none;
+    }
+
+    .blank-div {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: #4f4f4f;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+        z-index: 10;
+    }
+
+    .hamburger-links {
+        width: 55%;
+        height: 50%;
+        background-color: #f4f4f4;
+        display: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        z-index: 15;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+    }
+
+    .sticky-nav a {
+        text-decoration: none;
+        color: #4f4f4f;
+        font-size: 2rem;
+        opacity: 1;
+        z-index: 10;
+        color: #4f4f4f;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border: 1px solid #4f4f4f;
+        border-radius: 10px;
+        box-shadow: rgb(136 136 136) 8px 2px 20px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+
+    .sticky-nav-icon {
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .sticky-nav-icon img {
+        height: 3.5rem;
+    }
+
+    .delivery {
+        width: 65%;
+        justify-content: space-between;
+        margin-right: 1rem;
+    }
+
+    .how-to-order p {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .prices p {
+        margin-right: 1rem;
+    }
+
+    .contact {
+        height: 80rem;
+        padding: 0;
+    }
+
+    .contact-card {
+        width: 45rem;
+        height: 20rem;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card .face {
+        transform: perspective(400px) rotateX(0);
+    }
+
+    .contact-card:hover .face.front {
+        transform: perspective(2000px) rotateX(180deg);
+    }
+    
+    .contact-card .face.back {
+        transform: perspective(2000px) rotateX(180deg);
+    }
+
+    .contact h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .main {
+        height: 55rem;
+    }
+
+    .delivery {
+        font-size: 1rem;
+    }
+
+    .delivery i {
+        margin-left: 0.5rem;
+    }
+
+    .Logo-black {
+        height: 30rem;
+    }
+
+    .sm-icons {
+        width: 12%;
+    }
+}
+
+@media only screen and (max-width: 682px) {
+    .prices {
+        flex-direction: column;
+    }
+
+    .prices p {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    html {
+        font-size: 65%;
+    }
+
+    .Logo-black {
+        height: 25rem;
+    }
+
+    .main {
+        height: 50rem;
+    }
+
+    .custom-shape-divider-top-1616535572 svg,
+    .custom-shape-divider-bottom-1616535378 svg {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    html {
+        font-size: 60%;
+    }
+
+    .download-catalog h1 {
+        font-size: 1.5rem;
+    }
+
+    .download-catalog button {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    footer h2 {
+        margin-top: 2rem;
+    }
+
+    .sm-icons {
+        width: 15%;
+    }
+
+    .contact-card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .item {
+        flex-direction: column;
+        height: 60rem;
+    }
+
+    .item img {
+        height: 40%;
+    }
+
+    .delivery {
+        width: 68%;
+    }
+
+    .custom-shape-divider-top-1616535572 svg,
+    .custom-shape-divider-bottom-1616535378 svg {
+        height: 40px;
+    }
+
+    footer h2 {
+        margin: 0 1rem;
+    }
+
+    footer span {
+        font-size: 2rem;
+    }
+
+    footer h2 {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .main {
+        height: 45rem;
+    }
+
+    .Logo-black {
+        height: 20rem;
+    }
+
+    .item img {
+        height: 35%;
+    }
+
+    .item div {
+        width: 60%;
+    }
+
+    .sm-icons {
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .item {
+        flex-direction: column;
+        height: 50rem;
+    }
+
+    .item img {
+        height: 30%;
+    }
+
+    .custom-shape-divider-top-1616535572 svg,
+    .custom-shape-divider-bottom-1616535378 svg {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 50%;
+    }
+
+    .download-catalog button {
+        padding: 0.8rem 1rem;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+}
+

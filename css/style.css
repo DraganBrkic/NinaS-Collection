@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Della Respira', serif;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(8, 8, 8, 0.4)),
+    url(../img//bgimg/green-grass-background-football-field_41969-2262.jpg);
+    background-size: cover;
+    color: #242424;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+/* -------------- NAVIGATION ------------------ */
+
+.sticky-nav-icon {
+    display: none;
+}
+
+.sticky-nav {
+    display: none;
+}
+
+.sticky-nav ul {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    height: 6.5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.nav {
+    display: flex;
+    width: 49%;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0.8rem 1.5rem;
+    box-shadow: 2px 1px 5px 2px #888888;
+    cursor: pointer;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+
+nav li:hover {
+    background-color: #888;
+    color: #f4f4f4;
+    box-shadow: none;
+    animation: hoverNavigation 1s infinite;
+}
+
+@keyframes hoverNavigation {
+    0% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(7deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+
+nav li:active {
+    background-color: inherit;
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: inherit;
+}
+
+.custom-shape-divider-top-1616535572 {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1616535572 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-top-1616535572 .shape-fill {
+    fill: #f4f4f4;
+}
+
+/* ------------ Arrow -------------- */
+
+.arrow {
+    padding: 1rem;
+    border-radius: 100px;
+    position: fixed;
+    right: 0.5rem;
+    bottom: 3rem;
+    cursor: pointer;
+    z-index: 20;
+}
+.arrow img {
+    height: 3rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+/* ----------- ICONS DELIVERY -------- */
+
+.delivery {    
+    font-size: 1.2rem;
+    color: inherit;
+    height: 80%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.delivery i {
+    font-size: 4rem;
+    margin-left: 3rem;
+    animation: earthAnimation 3s linear infinite;
+    color: #6e6d6d;
+}
+
+@keyframes earthAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------- HEADINGS ------------- */
+
+.main {
+    display: flex;
+    height: 65rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1616535378 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1616535378 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom-1616535378 .shape-fill {
+    fill: #f4f4f4;
+}
+
+.titles {
+    display: flex;
+    width: 100%;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo-black {
+    margin-top: 10rem;
+    background-color: #f4f4f4;
+    opacity: 0.9;
+    border-radius: 10px;
+    height: 40rem;
+}
+
+/* --------------------- ITEMS ------------------ */
+
+.items-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.items-header h1 {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #242424;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.new-items-main-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+
+.item {
+    background-color: #f4f4f4;
+    width: 48%;
+    height: 30rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px 2px #888888;
+    margin: 1rem;
+} 
+
+.item div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item div span {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #6e6d6d;
+    color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.item img {
+    height: 60%;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.new-items-main-div div h1 {
+    font-size: 2rem;
+}
+
+.item p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.item h3 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    letter-spacing: 5px;
+    animation: newItemBtn 1.5s linear infinite;
+    font-family: 'Permanent Marker', cursive;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+@keyframes newItemBtn {
+    0% {
+        color: #f4f4f4;
+        border: 2px solid #f4f4f4;
+    }
+
+    100% {
+        color: #6e6d6d;
+        font-weight: bold;
+        border: 2px solid #6e6d6d;
+    }
+}
+
+.show-more {
+    padding: 1.5rem 2rem;
+    margin: 4rem;
+    background-color: #6e6d6d;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px 2px #888888;
+    color: #f4f4f4
+}
+
+
+/* ------------------ CONTACT --------------------- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 45rem;
+    background-color: #f4f4f4;
+    padding: 3rem 0;
+}
+
+.contact h1 {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #242424;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    width: 20%;
+    margin: 5rem auto;
+    text-align: center
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-card {
+    position: relative;
+    width: 23rem;
+    height: 32rem;
+    transform-style: preserve-3d;
+}
+
+.contact-card:last-child {
+    margin-right: 0;
+}
+
+.contact-card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out; 
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.contact-card .face.front {
+    background-color: #6e6d6d;;
+    border-radius: 10px;
+    color: #f4f4f4;
+}
+
+.contact-card:hover .face.front {
+    transform: perspective(2000px) rotateY(180deg);
+}
+
+.contact-card .face.back {
+    background-color: #f4f4f4;
+    transform: perspective(2000px) rotateY(180deg);
+    border: 3px solid #4f4f4f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card:hover .face.back {
+    transform: perspective(2000px) rotateY(360deg);
+}
+
+.contact-card .face h2 {
+    font-size: 2rem;
+    transform: perspective(2000px) translateZ(50px);
+}
+
+.contact-card .face a {
+    font-size: 1.5rem;
+    transform: perspective(500px) translateZ(50px);
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #6e6d6d;
+    color: #f4f4f4;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-card .face i {
+    font-size: 6rem;
+    transform: perspective(500px) translateZ(50px);
+    margin-bottom: 2rem;
+    color: #6e6d6d;
+}
+
+/* ------------------------- */
+
+.download-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.download-catalog h1 {
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.download-catalog button  {
+    padding: 1.5rem 2rem;
+    margin-left: 4rem;
+    background-color: #6e6d6d;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px 2px #888888;
+}
+
+.download-catalog a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* ---------- ABOUT US ---------------- */
+
+.how-to-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 7rem auto;
+    background-color: #f4f4f4;
+    color: #242424;
+    width: 80%;
+    opacity: 0.9;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.how-to-order h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.how-to-order h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.how-to-order p {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prices p {
+    margin-right: 10rem;
+    background-color: #6e6d6d;
+    color: #f4f4f4;
+    border-radius: 10px;
+    padding: 0.7rem;
+    
+}
+
+.prices p:last-child {
+    margin-right: 0;
+}
+
+/* --------- FOOTER --------------- */
+
+footer  {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color: #6e6d6d;
+    height: 20rem;
+    color: #f4f4f4;
+    border-top: 3px dotted #6e6d6d;
+}
+
+footer h2 {
+    font-size: 1.5rem;  
+    margin: 2rem 0 0 0;
+}
+
+footer span {
+    background-color: #f4f4f4;
+    color: #6e6d6d;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.sm-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 8%;
+    margin-top: 2rem ;
+}
+
+.sm-icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .fab {
+    cursor: pointer;
+}
+
+footer .fab:hover {
+    color: #242424;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
