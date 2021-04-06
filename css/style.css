@@ -495,25 +495,6 @@ nav a {
     letter-spacing: 1px;
 }
 
-.prices {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.prices p {
-    margin-right: 10rem;
-    background-color: #6e6d6d;
-    color: #f4f4f4;
-    border-radius: 10px;
-    padding: 0.7rem;
-    
-}
-
-.prices p:last-child {
-    margin-right: 0;
-}
-
 /* --------- FOOTER --------------- */
 
 footer  {
